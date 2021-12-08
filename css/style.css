@@ -151,6 +151,9 @@ strong {
 
 #home {
     background: linear-gradient(to left, rgba(27,27,27,0.95) 0%, rgba(27,27,27,0.15) 100%);
+}
+
+header {
     text-align: center;
 }
 
