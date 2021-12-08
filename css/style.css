@@ -1,0 +1,117 @@
+/* ----- Christophe ----- */
+:root {
+    --color-dark-900: #1f1f1f;
+    --color-dark-800: #414141;
+    --color-dark-300: #7a7a7a;
+    --color-dark-200: #979797;
+    --color-dark-100: #c9c9c9;
+    --color-light: #fafafa;
+    --color-link-normal: #800000;
+    --fs-body: 1.0625rem;
+    --fs-monospace: 0.9375rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: var(--fs-body);
+    line-height: 1.4;
+    background: var(--color-light);
+    color: var(--color-dark-900);
+    padding-top: 3rem;
+}
+
+main {
+    width: 95%;
+    margin: 0 auto;
+}
+
+footer {
+    padding: 2rem 0 4rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto Slab';
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+h1 small {
+    font-size: 1rem;
+    font-weight: 400;
+    font-size: var(--fs-body);
+}
+
+code,
+pre {
+    font-family: 'Fira Code', Consolas, monospace;
+    font-size: var(--fs-monospace);
+    line-height: 1.2;
+}
+
+pre .extra {
+    color: var(--color-dark-300);
+}
+
+a {
+    color: var(--color-link-normal);
+    text-decoration: none;
+    transition: opacity 250ms ease-in-out;
+}
+
+a:hover {
+    opacity: 0.75;
+    transition: opacity 250ms ease-in-out;
+}
+
+strong {
+    font-weight: 500;
+}
+
+.console {
+    background: var(--color-dark-900);
+    color: var(--color-light);
+    padding: 0.8rem 1rem;
+    border-radius: 0.3125rem;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.console .output {
+    color: var(--color-dark-200);
+    user-select: none;
+}
+
+.console .command-line::before {
+    content: '> ';
+    color: var(--color-dark-100);
+}
+
+.console .command-line-project::before {
+    content: 'C:\\Users\\arpivu\\Desktop\\devrh-menu> ';
+    color: var(--color-dark-100);
+}
+
+.parameter,
+.keyword {
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 37.5rem) {
+    .console {
+        overflow-x: unset;
+    }
+}
+
+@media screen and (min-width: 54.6875rem) {
+    main {
+        width: 80ch;
+    }
+}
