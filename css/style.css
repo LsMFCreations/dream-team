@@ -116,3 +116,20 @@ strong {
     }
 }
 /* // Fin christophe */
+
+#home {
+    background: linear-gradient(to left, rgba(27,27,27,0.95) 0%, rgba(27,27,27,0.05) 100%);
+}
+
+#home h1 {
+    color: crimson;
+}
+
+#home a {
+    display: inline-block;
+    border-radius: 6px;
+    background-color: darkorange;
+    padding: 8px;
+    text-decoration-line: none;
+    color: indigo;
+}
