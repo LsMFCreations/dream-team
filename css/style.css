@@ -291,23 +291,6 @@ header .content {
     text-shadow: 2px 2px 1px var(--color-dark-900);
 }
 
-.content button {
-    cursor: pointer;
-    font-size: 1.5rem;
-    height: 3.5rem;
-    width: 15rem;
-    border: none;
-    background-color: #e30613;
-    border-radius: 1.8rem;
-    border: solid black 0.5px;
-    color: white;
-}
-
-.content button:hover {
-    background: #f53441;
-    text-align: center;
-}
-
 em {
     font-size: larger;
     color: rgb(255, 93, 34);
