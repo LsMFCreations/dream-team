@@ -254,7 +254,7 @@ header {
 
 header .content {
     display: flex;
-    margin: 130px auto auto;
+    margin: 130px auto;
     text-align: center;
     width: fit-content;
     min-height: 380px;
@@ -317,8 +317,13 @@ em {
 }
 
 @media screen and (max-width: 600px) {
+    header {
+        height:auto;
+    }
+    
     header .content {
         padding: 24px 32px;
+        margin: 80px auto;
 
     }
     
@@ -332,5 +337,57 @@ em {
 
     .motive {
         font-size: 0.9rem;
+    }
+
+    #barefoot a {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header .content {
+        padding: 16px 20px;
+        margin-bottom: 40px;
+
+    }
+    
+    .content h1 {
+        font-size: 2.1rem;
+    }
+
+    .content h2 {
+        font-size: 1.2rem;
+    }
+
+    .motive {
+        font-size: 0.8rem;
+        display: block;
+        margin: auto;
+    }
+
+    .motive h3 {
+        margin: auto 1rem;
+        padding: 0.45rem 0.6rem;
+        text-align: right;
+    }
+
+    .motive h3:first-child {
+        width: 30%;
+    }
+
+    .motive h3:nth-child(2) {
+        width: 50%;
+    }
+
+    .motive h3:nth-child(3) {
+        width: 72%;
+    }
+
+    .motive h3:last-child {
+        width: 90%;
+    }
+
+    #barefoot a {
+        font-size: 1rem;
     }
 }
