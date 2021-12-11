@@ -157,6 +157,11 @@ strong {
     color: var(--color-dark-100);
 }
 
+.console em {
+    all: unset;
+    font-style: italic;
+}
+
 .parameter,
 .keyword {
     white-space: nowrap;
@@ -281,12 +286,12 @@ header .content {
     text-shadow: 1px 1px 1px rgba(255, 93, 34, 0.8);
 }
 
-.motive h3:nth-child(-n+2) {
+.motive h3:nth-child(-n + 2) {
     color: var(--color-dark-900);
     text-shadow: 1px 2px 1px var(--color-light);
 }
 
-.motive h3:nth-child(n+3) {
+.motive h3:nth-child(n + 3) {
     color: var(--color-light);
     text-shadow: 2px 2px 1px var(--color-dark-900);
 }
@@ -300,9 +305,8 @@ em {
 @media screen and (max-width: 900px) {
     header .content {
         padding: 24px 48px;
-
     }
-    
+
     .content h1 {
         font-size: 3.2rem;
     }
@@ -318,15 +322,14 @@ em {
 
 @media screen and (max-width: 600px) {
     header {
-        height:auto;
+        height: auto;
     }
-    
+
     header .content {
         padding: 24px 32px;
         margin: 80px auto;
-
     }
-    
+
     .content h1 {
         font-size: 2.8rem;
     }
@@ -348,9 +351,8 @@ em {
     header .content {
         padding: 16px 20px;
         margin-bottom: 40px;
-
     }
-    
+
     .content h1 {
         font-size: 2.1rem;
     }
